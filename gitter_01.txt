@@ -1,0 +1,616 @@
+Last login: Thu Nov 23 15:55:05 on ttys000
+Aleoss-MacBook-Air:~ aleos$ cd /Users/aleos/Documents/cms 
+Aleoss-MacBook-Air:cms aleos$ heroku login
+Enter your Heroku credentials:
+Email: wedev17@gmail.com	
+Password: ************
+Logged in as wedev17@gmail.com
+Aleoss-MacBook-Air:cms aleos$ gem install refinerycms
+Successfully installed refinerycms-4.0.1
+Parsing documentation for refinerycms-4.0.1
+Done installing documentation for refinerycms after 0 seconds
+1 gem installed
+Aleoss-MacBook-Air:cms aleos$ refinerycms myapp --heroku
+      create  
+      create  README.md
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+         run  git init from "."
+Initialized empty Git repository in /Users/arturoleos/Documents/cms/myapp/.git/
+      create  app
+      create  app/assets/config/manifest.js
+      create  app/assets/javascripts/application.js
+      create  app/assets/javascripts/cable.js
+      create  app/assets/stylesheets/application.css
+      create  app/channels/application_cable/channel.rb
+      create  app/channels/application_cable/connection.rb
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/jobs/application_job.rb
+      create  app/mailers/application_mailer.rb
+      create  app/models/application_record.rb
+      create  app/views/layouts/application.html.erb
+      create  app/views/layouts/mailer.html.erb
+      create  app/views/layouts/mailer.text.erb
+      create  app/assets/images/.keep
+      create  app/assets/javascripts/channels
+      create  app/assets/javascripts/channels/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  bin/update
+      create  bin/yarn
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/cable.yml
+      create  config/puma.rb
+      create  config/spring.rb
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/application_controller_renderer.rb
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/cors.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/new_framework_defaults_5_1.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/apple-touch-icon-precomposed.png
+      create  public/apple-touch-icon.png
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/fixtures/files
+      create  test/fixtures/files/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  test/system
+      create  test/system/.keep
+      create  test/application_system_test_case.rb
+      create  tmp
+      create  tmp/.keep
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor
+      create  vendor/.keep
+      create  package.json
+      remove  config/initializers/cors.rb
+      remove  config/initializers/new_framework_defaults_5_1.rb
+       apply  /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/refinerycms-4.0.1/templates/refinery/installer.rb
+      append    Gemfile
+         run    bundle install from "."
+The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+Fetching gem metadata from https://rubygems.org/..............
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies.....
+Using rake 12.3.0
+Using concurrent-ruby 1.0.5
+Using i18n 0.9.1
+Using minitest 5.10.3
+Using thread_safe 0.3.6
+Using tzinfo 1.2.4
+Using activesupport 5.1.4
+Using builder 3.2.3
+Using erubi 1.7.0
+Using mini_portile2 2.3.0
+Using nokogiri 1.8.1
+Using rails-dom-testing 2.0.3
+Using crass 1.0.3
+Using loofah 2.1.1
+Using rails-html-sanitizer 1.0.3
+Using actionview 5.1.4
+Using rack 2.0.3
+Using rack-test 0.8.2
+Using actionpack 5.1.4
+Using nio4r 2.1.0
+Using websocket-extensions 0.1.3
+Using websocket-driver 0.6.5
+Using actioncable 5.1.4
+Using globalid 0.4.1
+Using activejob 5.1.4
+Using mini_mime 1.0.0
+Using mail 2.7.0
+Using actionmailer 5.1.4
+Using activemodel 5.1.4
+Using activemodel-serializers-xml 1.0.2
+Using arel 8.0.0
+Using activerecord 5.1.4
+Using acts_as_indexed 0.8.3
+Using public_suffix 3.0.1
+Using addressable 2.5.2
+Using awesome_nested_set 3.1.3
+Using babosa 1.0.2
+Using bcrypt 3.1.11
+Using bindex 0.5.0
+Using bundler 1.16.0
+Using byebug 9.1.0
+Using xpath 2.1.0
+Using capybara 2.16.1
+Using ffi 1.9.18
+Using childprocess 0.8.0
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using coffee-script 2.4.1
+Using method_source 0.9.0
+Using thor 0.20.0
+Using railties 5.1.4
+Using coffee-rails 4.2.2
+Using decorators 2.0.3
+Using orm_adapter 0.5.0
+Using responders 2.4.0
+Using warden 1.2.7
+Using devise 4.3.0
+Using diffy 3.2.0
+Using multi_json 1.12.2
+Using dragonfly 1.1.3
+Using rb-fsevent 0.10.2
+Using rb-inotify 0.9.10
+Using sass-listen 4.0.0
+Using sass 3.5.3
+Using font-awesome-sass 4.7.0
+Using friendly_id 5.2.3
+Using request_store 1.3.2
+Using globalize 5.1.0.beta2
+Using jbuilder 2.7.0
+Using jquery-rails 4.3.1
+Using jquery-ui-rails 5.0.5
+Using ruby_dep 1.5.0
+Using listen 3.1.5
+Using puma 3.11.0
+Using sprockets 3.7.1
+Using sprockets-rails 3.2.1
+Using rails 5.1.4
+Using rails-i18n 5.0.4
+Using routing-filter 0.6.1
+Using refinerycms-i18n 4.0.1
+Using tilt 2.0.8
+Using sass-rails 5.0.7
+Using truncate_html 0.9.3
+Using will_paginate 3.1.6
+Using zilch-authorisation 0.0.1
+Using refinerycms-core 4.0.1
+Using refinerycms-images 4.0.1
+Using seo_meta 3.0.0
+Using speakingurl-rails 8.0.2
+Using refinerycms-pages 4.0.1
+Using refinerycms-resources 4.0.1
+Using refinerycms 4.0.1
+Using stringex 2.5.2
+Using refinerycms-acts-as-indexed 3.0.0
+Using refinerycms-authentication-devise 2.0.0
+Using refinerycms-wymeditor 2.0.0
+Using rubyzip 1.2.1
+Using selenium-webdriver 3.7.0
+Using spring 2.0.2
+Using spring-watcher-listen 2.0.1
+Using sqlite3 1.3.13
+Using turbolinks-source 5.0.3
+Using turbolinks 5.0.1
+Using uglifier 3.2.0
+Using web-console 3.5.1
+Bundle complete! 20 Gemfile dependencies, 105 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+        rake    db:create
+Created database 'db/development.sqlite3'
+Created database 'db/test.sqlite3'
+    generate    refinery:cms --fresh-installation --heroku
+      remove  app/views/layouts/application.html.erb
+        gsub  Gemfile
+      append  .gitignore
+      insert  app/assets/stylesheets/application.css
+      create  config/database.yml.mysql
+      create  config/database.yml.postgresql
+      create  config/database.yml.sqlite3
+      create  app/decorators/controllers/refinery/.keep
+      create  app/decorators/models/refinery/.keep
+      insert  config/routes.rb
+      create  config/initializers/refinery/core.rb
+        rake  refinery_resources:install:migrations
+Copied migration 20171123230152_create_refinerycms_resources_schema.refinery_resources.rb from refinery_resources
+Copied migration 20171123230153_add_translated_title_to_refinery_resources.refinery_resources.rb from refinery_resources
+      create  config/initializers/refinery/resources.rb
+        rake  refinery_pages:install:migrations
+Copied migration 20171123230154_create_refinerycms_pages_schema.refinery_pages.rb from refinery_pages
+Copied migration 20171123230155_add_custom_slug_to_refinery_pages.refinery_pages.rb from refinery_pages
+Copied migration 20171123230156_add_slug_to_refinery_page_parts.refinery_pages.rb from refinery_pages
+Copied migration 20171123230157_update_slug_and_title_in_refinery_page_parts.refinery_pages.rb from refinery_pages
+Copied migration 20171123230158_fix_slug_format_in_refinery_page_parts.refinery_pages.rb from refinery_pages
+Copied migration 20171123230159_remove_translated_columns_to_refinery_pages.refinery_pages.rb from refinery_pages
+Copied migration 20171123230160_remove_translated_columns_to_refinery_page_parts.refinery_pages.rb from refinery_pages
+      create  config/initializers/refinery/pages.rb
+      append  db/seeds.rb
+        rake  refinery_images:install:migrations
+Copied migration 20171123230161_create_refinerycms_images_schema.refinery_images.rb from refinery_images
+Copied migration 20171123230162_remove_image_ext_from_refinery_images.refinery_images.rb from refinery_images
+Copied migration 20171123230163_add_title_and_alt_to_refinery_images.refinery_images.rb from refinery_images
+Copied migration 20171123230164_translate_refinery_images.refinery_images.rb from refinery_images
+Copied migration 20171123230165_remove_translated_columns_from_refinery_images.refinery_images.rb from refinery_images
+      create  config/initializers/refinery/images.rb
+      create  config/initializers/refinery/i18n.rb
+        rake  railties:install:migrations db:create db:migrate db:seed
+Copied migration 20171123230166_create_seo_meta.seo_meta.rb from seo_meta
+Copied migration 20171123230167_remove_meta_keywords_from_seo_meta.seo_meta.rb from seo_meta
+Copied migration 20171123230168_create_refinerycms_authentication_schema.refinery_authentication_devise.rb from refinery_authentication_devise
+Copied migration 20171123230169_add_slug_to_refinery_users.refinery_authentication_devise.rb from refinery_authentication_devise
+Copied migration 20171123230170_add_full_name_to_refinery_users.refinery_authentication_devise.rb from refinery_authentication_devise
+Copied migration 20171123230171_rename_tables_to_new_namespace.refinery_authentication_devise.rb from refinery_authentication_devise
+Database 'db/development.sqlite3' already exists
+Database 'db/test.sqlite3' already exists
+== 20171123230152 CreateRefinerycmsResourcesSchema: migrating =================
+-- adapter_name()
+   -> 0.0000s
+-- adapter_name()
+   -> 0.0000s
+-- create_table(:refinery_resources, {:id=>:integer})
+   -> 0.0013s
+== 20171123230152 CreateRefinerycmsResourcesSchema: migrated (0.0015s) ========
+
+== 20171123230153 AddTranslatedTitleToRefineryResources: migrating ============
+== 20171123230153 AddTranslatedTitleToRefineryResources: migrated (0.0066s) ===
+
+== 20171123230154 CreateRefinerycmsPagesSchema: migrating =====================
+-- adapter_name()
+   -> 0.0000s
+-- adapter_name()
+   -> 0.0000s
+-- create_table(:refinery_page_parts, {:id=>:integer})
+   -> 0.0010s
+-- add_index(:refinery_page_parts, :id)
+   -> 0.0008s
+-- add_index(:refinery_page_parts, :refinery_page_id)
+   -> 0.0011s
+-- adapter_name()
+   -> 0.0000s
+-- adapter_name()
+   -> 0.0000s
+-- create_table(:refinery_pages, {:id=>:integer})
+   -> 0.0019s
+-- add_index(:refinery_pages, :depth)
+   -> 0.0008s
+-- add_index(:refinery_pages, :id)
+   -> 0.0011s
+-- add_index(:refinery_pages, :lft)
+   -> 0.0017s
+-- add_index(:refinery_pages, :parent_id)
+   -> 0.0018s
+-- add_index(:refinery_pages, :rgt)
+   -> 0.0028s
+== 20171123230154 CreateRefinerycmsPagesSchema: migrated (0.0853s) ============
+
+== 20171123230155 AddCustomSlugToRefineryPages: migrating =====================
+== 20171123230155 AddCustomSlugToRefineryPages: migrated (0.0014s) ============
+
+== 20171123230156 AddSlugToRefineryPageParts: migrating =======================
+-- rename_column(:refinery_page_parts, :title, :slug)
+   -> 0.0107s
+-- add_column(:refinery_page_parts, :title, :string)
+   -> 0.0004s
+== 20171123230156 AddSlugToRefineryPageParts: migrated (0.0112s) ==============
+
+== 20171123230157 UpdateSlugAndTitleInRefineryPageParts: migrating ============
+== 20171123230157 UpdateSlugAndTitleInRefineryPageParts: migrated (0.0052s) ===
+
+== 20171123230158 FixSlugFormatInRefineryPageParts: migrating =================
+== 20171123230158 FixSlugFormatInRefineryPageParts: migrated (0.0017s) ========
+
+== 20171123230159 RemoveTranslatedColumnsToRefineryPages: migrating ===========
+-- remove_column(:refinery_pages, :custom_slug)
+   -> 0.0245s
+-- remove_column(:refinery_pages, :slug)
+   -> 0.0287s
+== 20171123230159 RemoveTranslatedColumnsToRefineryPages: migrated (0.0583s) ==
+
+== 20171123230160 RemoveTranslatedColumnsToRefineryPageParts: migrating =======
+-- remove_column(:refinery_page_parts, :body)
+   -> 0.0095s
+== 20171123230160 RemoveTranslatedColumnsToRefineryPageParts: migrated (0.0096s) 
+
+== 20171123230161 CreateRefinerycmsImagesSchema: migrating ====================
+-- adapter_name()
+   -> 0.0000s
+-- adapter_name()
+   -> 0.0000s
+-- create_table(:refinery_images, {:id=>:integer})
+   -> 0.0011s
+== 20171123230161 CreateRefinerycmsImagesSchema: migrated (0.0012s) ===========
+
+== 20171123230162 RemoveImageExtFromRefineryImages: migrating =================
+-- remove_column(:refinery_images, :image_ext)
+   -> 0.0098s
+== 20171123230162 RemoveImageExtFromRefineryImages: migrated (0.0099s) ========
+
+== 20171123230163 AddTitleAndAltToRefineryImages: migrating ===================
+-- change_table(:refinery_images, {})
+   -> 0.0014s
+== 20171123230163 AddTitleAndAltToRefineryImages: migrated (0.0015s) ==========
+
+== 20171123230164 TranslateRefineryImages: migrating ==========================
+== 20171123230164 TranslateRefineryImages: migrated (0.0066s) =================
+
+== 20171123230165 RemoveTranslatedColumnsFromRefineryImages: migrating ========
+-- remove_column(:refinery_images, :image_title)
+   -> 0.0065s
+-- remove_column(:refinery_images, :image_alt)
+   -> 0.0051s
+== 20171123230165 RemoveTranslatedColumnsFromRefineryImages: migrated (0.0118s) 
+
+== 20171123230166 CreateSeoMeta: migrating ====================================
+-- adapter_name()
+   -> 0.0000s
+-- adapter_name()
+   -> 0.0000s
+-- create_table(:seo_meta, {:id=>:integer})
+   -> 0.0008s
+-- add_index(:seo_meta, :id)
+   -> 0.0017s
+-- add_index(:seo_meta, [:seo_meta_id, :seo_meta_type], {:name=>:id_type_index_on_seo_meta})
+   -> 0.0008s
+== 20171123230166 CreateSeoMeta: migrated (0.0122s) ===========================
+
+== 20171123230167 RemoveMetaKeywordsFromSeoMeta: migrating ====================
+-- remove_column(:seo_meta, :meta_keywords)
+   -> 0.0116s
+== 20171123230167 RemoveMetaKeywordsFromSeoMeta: migrated (0.0117s) ===========
+
+== 20171123230168 CreateRefinerycmsAuthenticationSchema: migrating ============
+-- adapter_name()
+   -> 0.0000s
+-- adapter_name()
+   -> 0.0000s
+-- create_table(:refinery_roles_users, {:id=>false})
+   -> 0.0006s
+-- add_index(:refinery_roles_users, [:role_id, :user_id])
+   -> 0.0005s
+-- add_index(:refinery_roles_users, [:user_id, :role_id])
+   -> 0.0009s
+-- adapter_name()
+   -> 0.0000s
+-- adapter_name()
+   -> 0.0000s
+-- create_table(:refinery_roles, {:id=>:integer})
+   -> 0.0004s
+-- adapter_name()
+   -> 0.0000s
+-- adapter_name()
+   -> 0.0000s
+-- create_table(:refinery_user_plugins, {:id=>:integer})
+   -> 0.0005s
+-- add_index(:refinery_user_plugins, :name)
+   -> 0.0005s
+-- add_index(:refinery_user_plugins, [:user_id, :name], {:unique=>true})
+   -> 0.0007s
+-- adapter_name()
+   -> 0.0000s
+-- adapter_name()
+   -> 0.0000s
+-- create_table(:refinery_users, {:id=>:integer})
+   -> 0.0008s
+-- add_index(:refinery_users, :id)
+   -> 0.0005s
+== 20171123230168 CreateRefinerycmsAuthenticationSchema: migrated (0.0063s) ===
+
+== 20171123230169 AddSlugToRefineryUsers: migrating ===========================
+-- add_column(:refinery_users, :slug, :string)
+   -> 0.0010s
+-- add_index(:refinery_users, :slug)
+   -> 0.0010s
+== 20171123230169 AddSlugToRefineryUsers: migrated (0.0022s) ==================
+
+== 20171123230170 AddFullNameToRefineryUsers: migrating =======================
+-- add_column(:refinery_users, :full_name, :string)
+   -> 0.0013s
+== 20171123230170 AddFullNameToRefineryUsers: migrated (0.0014s) ==============
+
+== 20171123230171 RenameTablesToNewNamespace: migrating =======================
+-- index_name(:refinery_user_plugins, {:column=>[:user_id, :name]})
+   -> 0.0001s
+-- index_name_exists?(:refinery_user_plugins, "index_refinery_user_plugins_on_user_id_and_name")
+   -> 0.0021s
+-- remove_index(:refinery_user_plugins, {:column=>[:user_id, :name], :name=>"index_refinery_user_plugins_on_user_id_and_name"})
+   -> 0.0011s
+-- add_index(:refinery_user_plugins, [:user_id, :name], {:unique=>true, :name=>:refinery_user_plugins_user_id_name})
+   -> 0.0008s
+-- index_name(:refinery_roles_users, {:column=>[:role_id, :user_id]})
+   -> 0.0000s
+-- index_name_exists?(:refinery_roles_users, "index_refinery_roles_users_on_role_id_and_user_id")
+   -> 0.0006s
+-- remove_index(:refinery_roles_users, {:column=>[:role_id, :user_id], :name=>"index_refinery_roles_users_on_role_id_and_user_id"})
+   -> 0.0008s
+-- index_name(:refinery_roles_users, {:column=>[:user_id, :role_id]})
+   -> 0.0000s
+-- index_name_exists?(:refinery_roles_users, "index_refinery_roles_users_on_user_id_and_role_id")
+   -> 0.0004s
+-- remove_index(:refinery_roles_users, {:column=>[:user_id, :role_id], :name=>"index_refinery_roles_users_on_user_id_and_role_id"})
+   -> 0.0005s
+-- add_index(:refinery_roles_users, [:role_id, :user_id], {:name=>:refinery_roles_users_role_id_user_id})
+   -> 0.0004s
+-- add_index(:refinery_roles_users, [:user_id, :role_id], {:name=>:refinery_roles_users_user_id_role_id})
+   -> 0.0007s
+-- rename_table(:refinery_users, :refinery_authentication_devise_users)
+   -> 0.0045s
+-- rename_table(:refinery_roles, :refinery_authentication_devise_roles)
+   -> 0.0004s
+-- rename_table(:refinery_user_plugins, :refinery_authentication_devise_user_plugins)
+   -> 0.0025s
+-- rename_table(:refinery_roles_users, :refinery_authentication_devise_roles_users)
+   -> 0.0009s
+== 20171123230171 RenameTablesToNewNamespace: migrated (0.0168s) ==============
+
+heroku-cli/6.14.38-9bfc11a (darwin-x64) node-v9.2.0
+/Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/refinerycms-core-4.0.1/lib/generators/refinery/cms/cms_generator.rb:145:in `deploy_to_hosting?':   [ABORTING] Heroku Toolbelt is not installed. Please re-start the installer after installing at: (RuntimeError)
+https://devcenter.heroku.com/articles/heroku-command-line
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/refinerycms-core-4.0.1/lib/generators/refinery/cms/cms_generator.rb:47:in `generate'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `block in invoke_all'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `each'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `map'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `invoke_all'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/thor-0.20.0/lib/thor/group.rb:232:in `dispatch'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/thor-0.20.0/lib/thor/base.rb:466:in `start'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/railties-5.1.4/lib/rails/generators.rb:269:in `invoke'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/railties-5.1.4/lib/rails/commands/generate/generate_command.rb:24:in `perform'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/thor-0.20.0/lib/thor.rb:387:in `dispatch'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/railties-5.1.4/lib/rails/command/base.rb:63:in `perform'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/railties-5.1.4/lib/rails/command.rb:44:in `invoke'
+	from /Users/arturoleos/.rvm/gems/ruby-2.4.0/gems/railties-5.1.4/lib/rails/commands.rb:16:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+    ============================================================================
+    Your new Refinery CMS application is now installed and mounts at '/'
+  ============================================================================
+         run  bundle install
+Using rake 12.3.0
+Using concurrent-ruby 1.0.5
+Using i18n 0.9.1
+Using minitest 5.10.3
+Using thread_safe 0.3.6
+Using tzinfo 1.2.4
+Using activesupport 5.1.4
+Using builder 3.2.3
+Using erubi 1.7.0
+Using mini_portile2 2.3.0
+Using nokogiri 1.8.1
+Using rails-dom-testing 2.0.3
+Using crass 1.0.3
+Using loofah 2.1.1
+Using rails-html-sanitizer 1.0.3
+Using actionview 5.1.4
+Using rack 2.0.3
+Using rack-test 0.8.2
+Using actionpack 5.1.4
+Using nio4r 2.1.0
+Using websocket-extensions 0.1.3
+Using websocket-driver 0.6.5
+Using actioncable 5.1.4
+Using globalid 0.4.1
+Using activejob 5.1.4
+Using mini_mime 1.0.0
+Using mail 2.7.0
+Using actionmailer 5.1.4
+Using activemodel 5.1.4
+Using activemodel-serializers-xml 1.0.2
+Using arel 8.0.0
+Using activerecord 5.1.4
+Using acts_as_indexed 0.8.3
+Using public_suffix 3.0.1
+Using addressable 2.5.2
+Using awesome_nested_set 3.1.3
+Using babosa 1.0.2
+Using bcrypt 3.1.11
+Using bindex 0.5.0
+Using bundler 1.16.0
+Using byebug 9.1.0
+Using xpath 2.1.0
+Using capybara 2.16.1
+Using ffi 1.9.18
+Using childprocess 0.8.0
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using coffee-script 2.4.1
+Using method_source 0.9.0
+Using thor 0.20.0
+Using railties 5.1.4
+Using coffee-rails 4.2.2
+Using decorators 2.0.3
+Using orm_adapter 0.5.0
+Using responders 2.4.0
+Using warden 1.2.7
+Using devise 4.3.0
+Using diffy 3.2.0
+Using multi_json 1.12.2
+Using dragonfly 1.1.3
+Using rb-fsevent 0.10.2
+Using rb-inotify 0.9.10
+Using sass-listen 4.0.0
+Using sass 3.5.3
+Using font-awesome-sass 4.7.0
+Using friendly_id 5.2.3
+Using request_store 1.3.2
+Using globalize 5.1.0.beta2
+Using jbuilder 2.7.0
+Using jquery-rails 4.3.1
+Using jquery-ui-rails 5.0.5
+Using ruby_dep 1.5.0
+Using listen 3.1.5
+Using puma 3.11.0
+Using sprockets 3.7.1
+Using sprockets-rails 3.2.1
+Using rails 5.1.4
+Using rails-i18n 5.0.4
+Using routing-filter 0.6.1
+Using refinerycms-i18n 4.0.1
+Using tilt 2.0.8
+Using sass-rails 5.0.7
+Using truncate_html 0.9.3
+Using will_paginate 3.1.6
+Using zilch-authorisation 0.0.1
+Using refinerycms-core 4.0.1
+Using refinerycms-images 4.0.1
+Using seo_meta 3.0.0
+Using speakingurl-rails 8.0.2
+Using refinerycms-pages 4.0.1
+Using refinerycms-resources 4.0.1
+Using refinerycms 4.0.1
+Using stringex 2.5.2
+Using refinerycms-acts-as-indexed 3.0.0
+Using refinerycms-authentication-devise 2.0.0
+Using refinerycms-wymeditor 2.0.0
+Using rubyzip 1.2.1
+Using selenium-webdriver 3.7.0
+Using spring 2.0.2
+Using spring-watcher-listen 2.0.1
+Using sqlite3 1.3.13
+Using turbolinks-source 5.0.3
+Using turbolinks 5.0.1
+Using uglifier 3.2.0
+Using web-console 3.5.1
+Bundle complete! 20 Gemfile dependencies, 105 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+Aleoss-MacBook-Air:cms aleos$ 
